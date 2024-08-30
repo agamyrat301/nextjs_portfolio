@@ -16,8 +16,6 @@ const EmailSection = () => {
       message: e.target.message.value,
     };
    return
-
-   
   };
 
   return (
@@ -37,11 +35,11 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
-            <Image src={GithubIcon} alt="Github Icon" />
+          <Link href="https://github.com/agamyrat301">
+            <Image src={GithubIcon} alt="Github profile" />
           </Link>
-          <Link href="linkedin.com">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          <Link href="https://www.linkedin.com/in/agamyrat-akmyradov-308845182/">
+            <Image src={LinkedinIcon} alt="Linkedin profile" />
           </Link>
         </div>
       </div>
