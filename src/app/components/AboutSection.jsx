@@ -33,8 +33,9 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>
+          <a href="https://www.hackerrank.com/certificates/2cf740b6955f">HackerRank Skill Certificate</a>
+        </li>
       </ul>
     ),
   },
