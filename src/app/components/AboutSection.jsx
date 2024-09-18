@@ -11,10 +11,15 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Node.js</li>
         <li>Express</li>
-        <li>PostgreSQL</li>
+        <li>PostgreSQL, MySQL</li>
         <li>Sequelize</li>
         <li>JavaScript</li>
-        <li>React</li>
+        <li>React js</li>
+        <li>Vue js</li>
+        <li>laravel</li>
+        <li>PHP</li>
+        <li>Tailwind css</li>
+        <li>Bootstrap</li>
       </ul>
     ),
   },
@@ -23,8 +28,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>International Turkmen-Turkish University - B.Sc. CSE</li>
+        <li>University of Bucharest - M.Sc. CSE</li>
       </ul>
     ),
   },
