@@ -4,6 +4,8 @@ import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -15,7 +17,28 @@ const EmailSection = () => {
       subject: e.target.subject.value,
       message: e.target.message.value,
     };
-   return
+
+    try {
+      // Send a POST request to the external API
+      const response = await fetch("https://afriarch.net/api/contactme", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      // Handle the response
+      const result = await response.json();
+      console.log("Success:", result);
+      toast.success('message sent successfully!')
+      data.email = ''
+      data.message = ''
+      data.subject = ''
+    } catch (error) {
+      console.error("Error:", error);
+      toast.error('Successfully toasted!')
+    }
   };
 
   return (
@@ -23,6 +46,10 @@ const EmailSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
+       <Toaster
+  position="bottom-center"
+  reverseOrder={false}
+/>
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">
@@ -45,7 +72,7 @@ const EmailSection = () => {
       </div>
       <div>
         {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">
+          <p className="text-green-500 text-sm my-2">
             Email sent successfully!
           </p>
         ) : (
