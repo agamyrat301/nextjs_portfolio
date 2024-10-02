@@ -41,6 +41,9 @@ const TAB_DATA = [
         <li>
           <a href="https://www.hackerrank.com/certificates/2cf740b6955f">HackerRank Skill Certificate</a>
         </li>
+        <li>
+          <a href="https://www.hackerrank.com/certificates/d2a71bcb4b1a">React front end developer(basic)</a>
+        </li>
       </ul>
     ),
   },
