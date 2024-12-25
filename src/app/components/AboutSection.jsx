@@ -16,6 +16,7 @@ const TAB_DATA = [
         <li>JavaScript</li>
         <li>React js</li>
         <li>Vue js</li>
+        <li>Nuxt js</li>
         <li>laravel</li>
         <li>PHP</li>
         <li>Tailwind css</li>
