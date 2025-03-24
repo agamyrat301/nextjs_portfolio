@@ -34,11 +34,11 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Food Ordering Application",
+    title: "Zyyada cosmetics online store",
     description: "Project 4 description",
-    image: "/images/projects/4.png",
+    image: "/images/projects/zyyada.png",
     tag: ["All", "Web"],
-    gitUrl: "https://yodarestoran.com/",
+    gitUrl: "https://zyyada.com.tm/",
     previewUrl: "/",
   },
   {
